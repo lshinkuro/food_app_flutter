@@ -17,11 +17,17 @@ Selamat datang di **My App**, sebuah proyek Flutter yang dirancang untuk menampi
 
 ## Contoh Tampilan Fitur
 
-<div style="display: flex; justify-content: space-between;">
-    <img src="assets/images/menu.png" width="200" alt="Menu Makanan"/>
-    <img src="assets/images/detail.png" width="200" alt="Detail Makanan"/>
-    <img src="assets/images/cart.png" width="200" alt="Keranjang Belanja"/>
-</div>
+| HomePage | SearchPage | History |
+|--------|--------|---------|
+| ![Mobile](foodapp_image/homepage.png) | ![Tablet](foodapp_image/searchpage.png) | ![Desktop](foodapp_image/history.png) |
+| Profile | Detail | Checkout |
+|--------|--------|---------|
+| ![Mobile](foodapp_image/profile.png) | ![Tablet](foodapp_image/detailefoodpage.png) | ![Desktop](foodapp_image/checkout.png) |
+| Login | OnBoarding | Register |
+|--------|--------|---------|
+| ![Mobile](foodapp_image/login.png) | ![Tablet](foodapp_image/onboarding.png) | ![Desktop](foodapp_image/register.png) |
+
+
 
 ## Memulai
 
