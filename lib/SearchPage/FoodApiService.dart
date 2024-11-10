@@ -1,6 +1,6 @@
 // Buat class untuk handle API Food
 import 'package:my_app/NetworkManager/NetworkManager.dart';
-import 'package:my_app/SearchPage/SearchPage.dart';
+import 'package:my_app/SearchPage/Food.dart';
 
 class FoodApiService {
   final NetworkManager _networkManager = NetworkManager();
