@@ -118,7 +118,10 @@ class _SearchPageState extends State<SearchPage> {
                           return Card(
                             margin: const EdgeInsets.only(bottom: 16),
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12),
+                              borderRadius: const BorderRadius.only(
+                                topLeft: Radius.circular(12),
+                                bottomRight: Radius.circular(12),
+                              ),
                             ),
                             child: InkWell(
                               onTap: () {

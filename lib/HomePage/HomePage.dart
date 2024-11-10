@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:my_app/ChartPage/ChartPage.dart';
+import 'package:my_app/ChartPage/ChartProvider.dart';
+import 'package:provider/provider.dart';
+import 'package:badges/badges.dart' as badges;
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -9,6 +13,39 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home'),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 16.0),
+            child: Consumer<CartProvider>(
+              builder: (context, cart, child) {
+                return badges.Badge(
+                  position: badges.BadgePosition.topEnd(top: 0, end: 3),
+                  badgeContent: Text(
+                    cart.foodItemCount.toString(),
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 12,
+                    ),
+                  ),
+                  badgeStyle: const badges.BadgeStyle(
+                    badgeColor: Colors.red,
+                  ),
+                  child: IconButton(
+                    icon: const Icon(Icons.shopping_cart),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const CartPage(),
+                        ),
+                      );
+                    },
+                  ),
+                );
+              },
+            ),
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),

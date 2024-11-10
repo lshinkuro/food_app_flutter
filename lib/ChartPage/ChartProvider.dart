@@ -13,6 +13,10 @@ class CartProvider extends ChangeNotifier {
   double get totalAmount =>
       _items.fold(0, (sum, item) => sum + item.totalPrice);
 
+  int get foodItemCount {
+    return _items.length;
+  }
+
   Future<void> loadCart() async {
     final prefs = await SharedPreferences.getInstance();
     final cartData = prefs.getString('cart');

@@ -1,6 +1,7 @@
 // cart_page.dart
 import 'package:flutter/material.dart';
 import 'package:my_app/ChartPage/ChartProvider.dart';
+import 'package:my_app/Checkout/CheckoutPage.dart';
 import 'package:provider/provider.dart';
 
 class CartPage extends StatefulWidget {
@@ -260,7 +261,13 @@ class _CartPageState extends State<CartPage> {
                                 onPressed: cart.items.isEmpty
                                     ? null
                                     : () {
-                                        // TODO: Implement checkout
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const CheckoutPage(),
+                                          ),
+                                        );
                                       },
                                 style: ElevatedButton.styleFrom(
                                   padding:
