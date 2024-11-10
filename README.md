@@ -22,7 +22,7 @@ Selamat datang di **My App**, sebuah proyek Flutter yang dirancang untuk menampi
 | ![Mobile](foodapp_image/homepage.png) | ![Tablet](foodapp_image/searchpage.png) | ![Desktop](foodapp_image/history.png) |
 | Profile | Detail | Checkout |
 |--------|--------|---------|
-| ![Mobile](foodapp_image/profile.png) | ![Tablet](foodapp_image/detailefoodpage.png) | ![Desktop](foodapp_image/checkout.png) |
+| ![Mobile](foodapp_image/profile.png) | ![Tablet](foodapp_image/detailfoodpage.png) | ![Desktop](foodapp_image/checkout.png) |
 | Login | OnBoarding | Register |
 |--------|--------|---------|
 | ![Mobile](foodapp_image/login.png) | ![Tablet](foodapp_image/onboarding.png) | ![Desktop](foodapp_image/register.png) |
